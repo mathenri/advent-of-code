@@ -1,3 +1,18 @@
 // Place all the styles related to the intcode controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+  color: rgb(0, 153, 0);
+  background-color: black;
+  font-family: monospace;
+}
+
+h1 {
+  color: rgb(0, 204, 0);
+  text-shadow: rgb(0, 204, 0) 0px 0px 8px;
+}
+
+li {
+  font-size: 16px;
+}

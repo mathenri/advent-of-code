@@ -5,6 +5,7 @@ class IntcodeController < ApplicationController
     input = params[:input] # || ''
     program = input.split(",").map(&:to_i)
 
+    @output = []
     programCounter = 0
     while programCounter < program.length()
     
@@ -39,6 +40,7 @@ class IntcodeController < ApplicationController
       when "04"
         param = mode_first_param == "1" ? program[programCounter+1] : program[program[programCounter+1]]
         puts "Output: #{param}"
+        @output.append(param)
         programCounter += 2
 
       when "99"
